@@ -10,6 +10,10 @@ myTube even can play the audio of videos in the background while you use another
 
 - Get myTube! from the [Microsoft Store](https://www.microsoft.com/en-us/p/mytube/9wzdncrcwf3l)
 
+# Frequently asked questions
+
+If you want to learn more about myTube make sure to check out the [wiki](https://github.com/mytube/mytube/wiki) here on github.
+
 # Reporting Bugs
 
 - Report bugs here on [Github](https://github.com/mytube/mytube/issues/new?template=bug_report.md)
