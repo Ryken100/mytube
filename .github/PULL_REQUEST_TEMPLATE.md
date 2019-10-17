@@ -1,0 +1,1 @@
+**myTube! is a comercial product and not open-source, if you want to know wether you can contribute otherwise, read our [Contribution Guidelines](https://github.com/mytube/mytube/blob/master/.github/CONTRIBUTING.md)**
