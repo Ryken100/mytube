@@ -1,0 +1,87 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.UI.Xaml", "Microsoft.UI.Xaml\Microsoft.UI.Xaml.csproj", "{1F9D3C8D-8AA8-493C-94D4-FFA97935852B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Graphics.Canvas", "Microsoft.Graphics.Canvas\Microsoft.Graphics.Canvas.csproj", "{1AAD382C-784A-4D3C-98D7-0B5915DC7322}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundAudio", "BackgroundAudio\BackgroundAudio.csproj", "{2B567BCC-3516-42E6-A82D-10921C613359}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundAudioService", "BackgroundAudioService\BackgroundAudioService.csproj", "{83DD7A5C-BE6A-4C1F-B414-8662C8EA69FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Windows10TileTask", "Windows10TileTask\Windows10TileTask.csproj", "{75F23C79-2615-4317-A346-75E80295CD28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ryken.Video.Effects.Core", "Ryken.Video.Effects.Core\Ryken.Video.Effects.Core.csproj", "{D465B72D-3681-4B50-81C5-B5F7D9C8C428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToastActionBackgroundTask", "ToastActionBackgroundTask\ToastActionBackgroundTask.csproj", "{07D63ACC-6270-47A6-B62D-497BDA451EA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Debug|x64 = Debug|x64
+		Release|AnyCPU = Release|AnyCPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F9D3C8D-8AA8-493C-94D4-FFA97935852B}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{1F9D3C8D-8AA8-493C-94D4-FFA97935852B}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{1F9D3C8D-8AA8-493C-94D4-FFA97935852B}.Debug|x64.ActiveCfg = Debug|AnyCPU
+		{1F9D3C8D-8AA8-493C-94D4-FFA97935852B}.Debug|x64.Build.0 = Debug|AnyCPU
+		{1F9D3C8D-8AA8-493C-94D4-FFA97935852B}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{1F9D3C8D-8AA8-493C-94D4-FFA97935852B}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{1F9D3C8D-8AA8-493C-94D4-FFA97935852B}.Release|x64.ActiveCfg = Release|AnyCPU
+		{1F9D3C8D-8AA8-493C-94D4-FFA97935852B}.Release|x64.Build.0 = Release|AnyCPU
+		{1AAD382C-784A-4D3C-98D7-0B5915DC7322}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{1AAD382C-784A-4D3C-98D7-0B5915DC7322}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{1AAD382C-784A-4D3C-98D7-0B5915DC7322}.Debug|x64.ActiveCfg = Debug|AnyCPU
+		{1AAD382C-784A-4D3C-98D7-0B5915DC7322}.Debug|x64.Build.0 = Debug|AnyCPU
+		{1AAD382C-784A-4D3C-98D7-0B5915DC7322}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{1AAD382C-784A-4D3C-98D7-0B5915DC7322}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{1AAD382C-784A-4D3C-98D7-0B5915DC7322}.Release|x64.ActiveCfg = Release|AnyCPU
+		{1AAD382C-784A-4D3C-98D7-0B5915DC7322}.Release|x64.Build.0 = Release|AnyCPU
+		{2B567BCC-3516-42E6-A82D-10921C613359}.Debug|AnyCPU.ActiveCfg = Debug|x64
+		{2B567BCC-3516-42E6-A82D-10921C613359}.Debug|AnyCPU.Build.0 = Debug|x64
+		{2B567BCC-3516-42E6-A82D-10921C613359}.Debug|x64.ActiveCfg = Debug|x64
+		{2B567BCC-3516-42E6-A82D-10921C613359}.Debug|x64.Build.0 = Debug|x64
+		{2B567BCC-3516-42E6-A82D-10921C613359}.Release|AnyCPU.ActiveCfg = Release|x64
+		{2B567BCC-3516-42E6-A82D-10921C613359}.Release|AnyCPU.Build.0 = Release|x64
+		{2B567BCC-3516-42E6-A82D-10921C613359}.Release|x64.ActiveCfg = Release|x64
+		{2B567BCC-3516-42E6-A82D-10921C613359}.Release|x64.Build.0 = Release|x64
+		{83DD7A5C-BE6A-4C1F-B414-8662C8EA69FF}.Debug|AnyCPU.ActiveCfg = Debug|x64
+		{83DD7A5C-BE6A-4C1F-B414-8662C8EA69FF}.Debug|AnyCPU.Build.0 = Debug|x64
+		{83DD7A5C-BE6A-4C1F-B414-8662C8EA69FF}.Debug|x64.ActiveCfg = Debug|x64
+		{83DD7A5C-BE6A-4C1F-B414-8662C8EA69FF}.Debug|x64.Build.0 = Debug|x64
+		{83DD7A5C-BE6A-4C1F-B414-8662C8EA69FF}.Release|AnyCPU.ActiveCfg = Release|x64
+		{83DD7A5C-BE6A-4C1F-B414-8662C8EA69FF}.Release|AnyCPU.Build.0 = Release|x64
+		{83DD7A5C-BE6A-4C1F-B414-8662C8EA69FF}.Release|x64.ActiveCfg = Release|x64
+		{83DD7A5C-BE6A-4C1F-B414-8662C8EA69FF}.Release|x64.Build.0 = Release|x64
+		{75F23C79-2615-4317-A346-75E80295CD28}.Debug|AnyCPU.ActiveCfg = Debug|x64
+		{75F23C79-2615-4317-A346-75E80295CD28}.Debug|AnyCPU.Build.0 = Debug|x64
+		{75F23C79-2615-4317-A346-75E80295CD28}.Debug|x64.ActiveCfg = Debug|x64
+		{75F23C79-2615-4317-A346-75E80295CD28}.Debug|x64.Build.0 = Debug|x64
+		{75F23C79-2615-4317-A346-75E80295CD28}.Release|AnyCPU.ActiveCfg = Release|x64
+		{75F23C79-2615-4317-A346-75E80295CD28}.Release|AnyCPU.Build.0 = Release|x64
+		{75F23C79-2615-4317-A346-75E80295CD28}.Release|x64.ActiveCfg = Release|x64
+		{75F23C79-2615-4317-A346-75E80295CD28}.Release|x64.Build.0 = Release|x64
+		{D465B72D-3681-4B50-81C5-B5F7D9C8C428}.Debug|AnyCPU.ActiveCfg = Debug|x64
+		{D465B72D-3681-4B50-81C5-B5F7D9C8C428}.Debug|AnyCPU.Build.0 = Debug|x64
+		{D465B72D-3681-4B50-81C5-B5F7D9C8C428}.Debug|x64.ActiveCfg = Debug|x64
+		{D465B72D-3681-4B50-81C5-B5F7D9C8C428}.Debug|x64.Build.0 = Debug|x64
+		{D465B72D-3681-4B50-81C5-B5F7D9C8C428}.Release|AnyCPU.ActiveCfg = Release|x64
+		{D465B72D-3681-4B50-81C5-B5F7D9C8C428}.Release|AnyCPU.Build.0 = Release|x64
+		{D465B72D-3681-4B50-81C5-B5F7D9C8C428}.Release|x64.ActiveCfg = Release|x64
+		{D465B72D-3681-4B50-81C5-B5F7D9C8C428}.Release|x64.Build.0 = Release|x64
+		{07D63ACC-6270-47A6-B62D-497BDA451EA5}.Debug|AnyCPU.ActiveCfg = Debug|x64
+		{07D63ACC-6270-47A6-B62D-497BDA451EA5}.Debug|AnyCPU.Build.0 = Debug|x64
+		{07D63ACC-6270-47A6-B62D-497BDA451EA5}.Debug|x64.ActiveCfg = Debug|x64
+		{07D63ACC-6270-47A6-B62D-497BDA451EA5}.Debug|x64.Build.0 = Debug|x64
+		{07D63ACC-6270-47A6-B62D-497BDA451EA5}.Release|AnyCPU.ActiveCfg = Release|x64
+		{07D63ACC-6270-47A6-B62D-497BDA451EA5}.Release|AnyCPU.Build.0 = Release|x64
+		{07D63ACC-6270-47A6-B62D-497BDA451EA5}.Release|x64.ActiveCfg = Release|x64
+		{07D63ACC-6270-47A6-B62D-497BDA451EA5}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
