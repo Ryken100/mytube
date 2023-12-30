@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function getParameterByName(name) {
+            return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
+        }
+        function getURLParameters(url) {
+
+            var result = {};
+            var searchIndex = url.indexOf("?");
+            if (searchIndex == -1) return result;
+            var sPageURL = url.substring(searchIndex + 1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++) {
+                var sParameterName = sURLVariables[i].split('=');
+                result[sParameterName[0]] = sParameterName[1];
+            }
+            return result;
+        }
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  var urlVars = getURLParameters(window.location.href);
+  var accessToken;
+  if (urlVars["access_token"]) {
+      accessToken = urlVars["access_token"];
+  }
+  var source = "https://www.youtube.com/iframe_api";
+  if (accessToken)
+      source += "?access_token=" + accessToken;
+  tag.src = source;
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubeIframeAPIReady() {
+      var id = "M7lc1UVf-VE";
+      var quality = "small";
+      var vars = getUrlVars();
+      if (vars["videoId"]) {
+          id = vars["videoId"];
+      }
+      if (vars["quality"]) {
+          quality = vars["quality"];
+      }
+    player = new YT.Player('ytplayer', {
+      height: String(window.innerHeight),
+      width: String(window.innerWidth),
+      videoId: id,
+        playerVars:{
+            controls:0,
+            autoplay: 0,
+            disablekb: 1,
+            fs: 0,
+            showinfo: 0,
+            enablejsapi: 1,
+            modestbranding: 1,
+            suggestedQuality: quality,
+            rel: 0
+        },
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onStateChanged,
+            'onPlaybackQualityChange': onQualityChanged,
+            'onError': onError
+        }
+        });
+      function onError(e)
+      {
+          window.external.notify("Error?Value=" + String(e.data));
+      }
+    function onQualityChanged(e) {
+        window.external.notify("Quality?Value=" + String(e.data));
+    }
+    function onPlayerReady() {
+        window.external.notify("PlayerReady");
+        Play();
+        var volume = vars["volume"];
+        if (volume) {
+            player.setVolume(Number(volume));
+        }
+    }
+    function onStateChanged(e) {
+        window.external.notify("State?Value=" + String(e.data));
+    }
+    function getUrlVars() {
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for (var i = 0; i < hashes.length; i++) {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+    }
+    window.onresize = function () {
+        if (player) {
+            ytplayer.width = String(window.innerWidth);
+            ytplayer.height = String(window.innerHeight);
+        }
+    };
+  }
+  function Position()
+  {
+      if (player) {
+          return player.getCurrentTime().toString();
+      }
+      return "0";
+  }
+  function Duration() {
+      if (player) {
+          return player.getDuration().toString();
+      }
+      return "0";
+  }
+  function Seek(s) {
+      if (player) {
+          player.seekTo(Number(s), true);
+      }
+  }
+  function Pause() {
+      if (player) {
+          player.pauseVideo();
+      }
+  }
+  function GetQuality() {
+      if (player) {
+          return player.getPlaybackQuality();
+      }
+  }
+  function SetQuality(qual) {
+      if (player) {
+          return player.setPlaybackQuality(qual.toString());
+      }
+  }
+  function GetQualities()
+  {
+      if (player) {
+          return player.getAvailableQualityLevels().toString();
+      }
+  }
+  function Stop() {
+      if (player) {
+          player.stopVideo();
+      }
+  }
+  function Play() {
+      if (player) {
+          player.playVideo();
+      }
+    }
+
+        function GetPlaybackRate() {
+            if (player)
+                return player.getPlaybackRate();
+        }
+        function SetPlaybackRate(rate) {
+            if (player)
+                player.setPlaybackRate(parseFloat(rate));
+        }
+        function GetPlaybackRates() {
+            if (player)
+                return player.getAvailablePlaybackRates().toString();
+        }
+        function GetVolume() {
+            if (player) {
+                player.getVolume();
+            }
+        }
+
+        function SetVolume(volume) {
+            if (player) {
+                player.setVolume(Number(volume));
+            }
+        }
+
+    </script>
+    <style>
+        body {
+            margin:0px;
+            padding:0px;
+            background-color:black;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div id="ytplayer"></div>
+</body>
+</html>

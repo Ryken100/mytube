@@ -1,0 +1,6 @@
+﻿myTube 4.0 is a never ending work-in-progress, so you are likely to come across some bugs and unfinished features.
+
+That said, I hope you enjoy the beta program!
+
+Cheers,
+Chris

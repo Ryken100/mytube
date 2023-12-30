@@ -1,0 +1,60 @@
+{
+  "AppName": "myTube",
+  "Settings": {
+    "The Philosopher's Stone": {
+      "Values": {
+        "Normal": false,
+        "Beta": true
+      },
+      "Type": "Boolean",
+      "Name": "The Philosopher's Stone"
+    },
+    "DonationReminderDays": {
+      "Values": {
+        "Normal": 7.0,
+        "Beta": 4.0
+      },
+      "Type": "FloatingPoint",
+      "Name": "DonationReminderDays"
+    },
+    "PaidDonationReminderDays": {
+      "Values": {
+        "Normal": 30.0
+      },
+      "Type": "FloatingPoint",
+      "Name": "PaidDonationReminderDays"
+    },
+    "DonationRunCount": {
+      "Values": {
+        "Normal": 5
+      },
+      "Type": "Integer",
+      "Name": "DonationRunCount"
+    },
+    "PaidDonationRunCount": {
+      "Values": {
+        "Normal": 15
+      },
+      "Type": "Integer",
+      "Name": "PaidDonationRunCount"
+    },
+    "ForceRedownloadSettingsOnLaunch": {
+      "Values": {
+        "Beta": true,
+        "Normal": false
+      },
+      "Type": "Boolean",
+      "Name": "ForceRedownloadSettingsOnLaunch"
+    },
+    "RedownloadSettingsHours": {
+      "Values": {
+        "Normal": 2.0
+      },
+      "Type": "FloatingPoint",
+      "Name": "RedownloadSettingsHours"
+    }
+  },
+  "Id": "f1669781-94a0-47b1-8b87-179befd17377",
+  "DateCreated": "2018-02-27T07:48:44.7302131Z",
+  "DateModified": "2018-02-27T07:48:44.7302131Z"
+}

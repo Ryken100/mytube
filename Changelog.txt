@@ -1,0 +1,7 @@
+﻿Hi all,
+
+Here's the changelog:
+- Fixed resource loading issue that caused startup crash on Xbox
+
+Cheers,
+Chris

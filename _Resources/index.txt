@@ -1,0 +1,10 @@
+System.Diagnostics.DiagnosticSource, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51
+  System.Diagnostics.DiagnosticSource.xml
+JetBrains.Annotations, Version=2019.1.1.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325
+  JetBrains.Annotations.Source.cs
+Ryken.Video.Effects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  Ryken.Video.Effects.ShaderBin.DirectionalBlur.bin
+  Ryken.Video.Effects.ShaderBin.HQ2X.bin
+RykenLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  Ryken.Imaging.ShaderBin.BokehColorPicker.bin
+  Ryken.Imaging.ShaderBin.ReadabilityChecker.bin
